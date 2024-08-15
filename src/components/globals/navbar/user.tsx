@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import Cookies from "js-cookie";
+
 
 const User = () => {
   return (
@@ -32,9 +32,7 @@ const User = () => {
         <DropdownMenuSeparator />
 
         <DropdownMenuItem
-          onClick={() => {
-            Cookies.remove("token");
-          }}
+    
         >
           Log out
         </DropdownMenuItem>
